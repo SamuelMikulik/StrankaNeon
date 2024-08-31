@@ -1,48 +1,95 @@
+:root {
+  --primary: darkgray;
+} /* premenná */
+
 p {
-    text-align: left;
-    font-size:25px;
-    color: black;
-    width: 50%;
-    word-wrap: break-word;
-    height:100%;
-    /*display: flex;*/
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.important {
-    color:gray;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: black;
+  word-wrap: break-word;
+  height: 100%;
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 40px;
+  border: solid 1px black;
 }
 
 .btn {
-    
-    text-decoration: none;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    background-color: darkgray;
-    font-weight: bold;
-    border: 1px solid #bfbfbf;
-    padding: 6px 12px;
-    border-radius: 4px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background-color: var(--primary);
+  font-weight: bold;
+  border: 1px solid, var(--primary);
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin: 2px;
+  transition: background-color 0.5s ease-in-out;
+  &:hover {
+    background-color: white;
+  }
 }
-
 h2 {
-    text-align: left;
-    margin-top: 50px;
-    margin-bottom: 5px;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+  color: black;
+  font-size: 40px;
+  border-bottom: 1px solid black;
 }
 
-.navbar {
-    position: fixed; /* Fixované na hornej časti stránky */
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 0px;
-    z-index: 1000; /* Aby bolo menu vždy nad obsahom */
-    text-decoration:none;
+nav {
+  position: fixed; /* Fixované na hornej časti stránky */
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 0px;
+  z-index: 1000; /* Aby bolo menu vždy nad obsahom */
+  text-decoration: none;
+  justify-content: right;
+  margin-right: 2px;
 }
 
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ndps {
+  text-decoration: none;
+  font-size: 50px;
+  display: flex;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid;
+  padding: 6px 12px;
+  border-radius: 40px;
+  width: 20%;
+}
+
+body {
+  background-image: url("/StrankaNeon/sourcePictures/Obrazok1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+  .ndps {
+    width: 80%;
+  }
+}
