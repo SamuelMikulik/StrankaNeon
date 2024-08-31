@@ -1,0 +1,48 @@
+p {
+    text-align: left;
+    font-size:25px;
+    color: black;
+    width: 50%;
+    word-wrap: break-word;
+    height:100%;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.important {
+    color:gray;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: darkgray;
+    font-weight: bold;
+    border: 1px solid #bfbfbf;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.navbar {
+    position: fixed; /* Fixované na hornej časti stránky */
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    z-index: 1000; /* Aby bolo menu vždy nad obsahom */
+    text-decoration:none;
+}
+
